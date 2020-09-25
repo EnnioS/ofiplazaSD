@@ -58,16 +58,16 @@
     }
     </style>
   </head>
-  <body id="body-layout" style="background: #406c8d;">
+  <body id="body-layout" style="background: #2D4C46;">
     <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
       <tr>
-        <td align="center" valign="top" style="padding: 0 15px;background: #406c8d;">
+        <td align="center" valign="top" style="padding: 0 15px;background: #2D4C46;">
           <table align="center" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td height="15" style="height: 15px; line-height:15px;"></td>
             </tr>
             <tr>
-              <td width="600" align="center" valign="top" style="border-radius: 4px; overflow: hidden; box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.2);background: #dde1e6;">
+              <td  align="center" valign="top" style="border-radius: 4px; overflow: hidden; box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.2);background: #ffffff;">
                 <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td align="center" valign="top" style="border-top-left-radius: 4px; border-top-right-radius: 4px; overflow: hidden; padding: 0 20px;background: #302f35;">
@@ -76,7 +76,7 @@
                           <td height="30" style="height: 30px; line-height:30px;"></td>
                         </tr>
                         <tr>
-                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 32px; mso-line-height-rule: exactly; line-height: 32px; font-weight: 400; letter-spacing: 1px;color: #ffffff;">Notificación</td>
+                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 32px; mso-line-height-rule: exactly; line-height: 32px; font-weight: 400; letter-spacing: 1px;color: #ffffff;">Ofiplaza San Dionisio</td>
                         </tr>
                         <tr>
                           <td height="30" style="height: 30px; line-height:30px;"></td>
@@ -180,7 +180,7 @@
               <td width="600" align="center" valign="top">
                 <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td align="center" valign="top" style="font-family: Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; font-weight: 400;color: #a1b4c4;">Este es un correo generado automaticamente, porfavor no responda.</td>
+                    <td align="center" valign="top" style="font-family: Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; font-weight: 400;color: #a1b4c4;">este es un correo enviado desde el sitio web ofiplazasandisonisio.com</td>
                   </tr>
                 </table>
               </td>

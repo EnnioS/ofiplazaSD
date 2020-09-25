@@ -35,7 +35,7 @@ try {
     if (isset($_POST['form-type'])) {
         switch ($_POST['form-type']){
             case 'contact':
-                $subject = 'Mensaje desde su sitio web';
+                $subject = 'Corre desde ofiplazasandionisio.com';
                 break;
             case 'subscribe':
                 $subject = 'Subscribe request';
@@ -44,7 +44,7 @@ try {
                 $subject = 'Order request';
                 break;
             default:
-                $subject = 'Mensaje desde su sitio web';
+                $subject = 'Corre desde ofiplazaSandionisio.com';
                 break;
         }
     }else{
@@ -61,7 +61,7 @@ try {
     if (isset($_POST['message'])) {
         $template = str_replace(
             array("<!-- #{MessageState} -->", "<!-- #{MessageDescription} -->"),
-            array("Message:", $_POST['message']),
+            array("Mensaje:", $_POST['message']),
             $template);
     }
 
@@ -124,8 +124,8 @@ try {
             $_FILES['file']['name']);
     }
 
-    if (isset($_POST['name'])){
-        $mail->FromName = $_POST['name'];
+    if (isset($_POST['nombre'])){
+        $mail->FromName = $_POST['nombre'] .' '. $_POST['apellido'];
     }else{
         $mail->FromName = "Desde Web";
     }
