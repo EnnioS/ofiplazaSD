@@ -55,6 +55,7 @@
 			countdown:               document.querySelectorAll( '.countdown' )
 		};
 
+
 	/**
 	 * @desc Check the element was been scrolled into the view
 	 * @param {object} elem - jQuery object
@@ -653,47 +654,47 @@
 								markerElement.gmarker = marker;
 								markers.push({markerElement: markerElement, infoWindow: infoWindow});
 								marker.isActive = false;
-								// Handle infoWindow close click
-								google.maps.event.addListener(infoWindow,'closeclick',(function(markerElement, mapElement){
-									var markerIcon = null;
-									markerElement.gmarker.isActive = false;
-									markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon");
-									markerElement.gmarker.setIcon(markerIcon);
-								}).bind(this, markerElement, mapElement));
+								// // Handle infoWindow close click
+								// google.maps.event.addListener(infoWindow,'closeclick',(function(markerElement, mapElement){
+								// 	var markerIcon = null;
+								// 	markerElement.gmarker.isActive = false;
+								// 	markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon");
+								// 	markerElement.gmarker.setIcon(markerIcon);
+								// }).bind(this, markerElement, mapElement));
 
 
-								// Set marker active on Click and open infoWindow
-								google.maps.event.addListener(marker, 'click', (function(markerElement, mapElement) {
-									if (markerElement.infoWindow.getContent().length === 0) return;
-									var gMarker, currentMarker = markerElement.gmarker, currentInfoWindow;
-									for (var k =0; k < markers.length; k++){
-										var markerIcon;
-										if (markers[k].markerElement === markerElement){
-											currentInfoWindow = markers[k].infoWindow;
-										}
-										gMarker = markers[k].markerElement.gmarker;
-										if (gMarker.isActive && markers[k].markerElement !== markerElement){
-											gMarker.isActive = false;
-											markerIcon = markers[k].markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")
-											gMarker.setIcon(markerIcon);
-											markers[k].infoWindow.close();
-										}
-									}
+								// // Set marker active on Click and open infoWindow
+								// google.maps.event.addListener(marker, 'click', (function(markerElement, mapElement) {
+								// 	if (markerElement.infoWindow.getContent().length === 0) return;
+								// 	var gMarker, currentMarker = markerElement.gmarker, currentInfoWindow;
+								// 	for (var k =0; k < markers.length; k++){
+								// 		var markerIcon;
+								// 		if (markers[k].markerElement === markerElement){
+								// 			currentInfoWindow = markers[k].infoWindow;
+								// 		}
+								// 		gMarker = markers[k].markerElement.gmarker;
+								// 		if (gMarker.isActive && markers[k].markerElement !== markerElement){
+								// 			gMarker.isActive = false;
+								// 			markerIcon = markers[k].markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")
+								// 			gMarker.setIcon(markerIcon);
+								// 			markers[k].infoWindow.close();
+								// 		}
+								// 	}
 
-									currentMarker.isActive = !currentMarker.isActive;
-									if (currentMarker.isActive) {
-										if (markerIcon = markerElement.getAttribute("data-icon-active") || mapElement.getAttribute("data-icon-active")){
-											currentMarker.setIcon(markerIcon);
-										}
+								// 	currentMarker.isActive = !currentMarker.isActive;
+								// 	if (currentMarker.isActive) {
+								// 		if (markerIcon = markerElement.getAttribute("data-icon-active") || mapElement.getAttribute("data-icon-active")){
+								// 			currentMarker.setIcon(markerIcon);
+								// 		}
 
-										currentInfoWindow.open(map, marker);
-									}else{
-										if (markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")){
-											currentMarker.setIcon(markerIcon);
-										}
-										currentInfoWindow.close();
-									}
-								}).bind(this, markerElement, mapElement))
+								// 		currentInfoWindow.open(map, marker);
+								// 	}else{
+								// 		if (markerIcon = markerElement.getAttribute("data-icon") || mapElement.getAttribute("data-icon")){
+								// 			currentMarker.setIcon(markerIcon);
+								// 		}
+								// 		currentInfoWindow.close();
+								// 	}
+								// }).bind(this, markerElement, mapElement))
 							})
 						}
 					}

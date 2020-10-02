@@ -2,7 +2,7 @@
   "useSmtp": false,
   "host": "stmp.gmail.com",
   "port": 465,
-  "username": "enniosaenz@gmail.com",
-  "password": "ENNJVRSNZ",
-  "recipientEmail": "enniosaenz@gmail.com"
+  "username": "ventas@infodesarrollos.com",
+  "password": "",
+  "recipientEmail": "ventas@infodesarrollos.com"
 }
